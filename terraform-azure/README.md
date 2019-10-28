@@ -1,4 +1,4 @@
-# Terraform example for Google Compute Engine (GCE)
+# Terraform example for Azure
 
 What it does: create a Vertica cluster with a Management Console node plus 1-3 Vertica cluster nodes.  A number of parameters are configurable through variables.tf
 
@@ -10,7 +10,7 @@ You'll need to set up the following:
 
 Initialize with "terraform init"
 
-Create a service account for the cluster and save the JSON credentials as "keyfile.json"
+Log into Azure with "az login"
 
 Create SSH key pair named "verticatf.sshkey" and "verticatf.sshkey.pub"
 
@@ -20,4 +20,4 @@ haveged-1.9.1-1.el7.x86_64.rpm        libquadmath-4.8.5-39.el7.x86_64.rpm  verti
 
 Get the Vertica RPM's from my.vertica.com.  For other packages, you can download RPM's to this folder using e.g.: yum install --downloadonly --downloaddir=rpm/ dialog haveged libgfortran libquadmath
 
-Best of luck and report any issues or feature requests her on GitHub.
+Best of luck and report any issues or feature requests here on GitHub.
